@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anjos Barbearia em São Paulo. Cortes masculinos, barba alinhada, acabamento na navalha e atendimento com agendamento pelo Instagram."
+    />
+    <meta name="theme-color" content="#101014" />
+    <meta property="og:title" content="Anjos Barbearia | São Paulo" />
+    <meta
+      property="og:description"
+      content="Corte, barba e acabamento com presença, técnica e pontualidade."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80"
+    />
+    <title>Anjos Barbearia | São Paulo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Barbershop",
+        "name": "Anjos Barbearia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "sameAs": "https://www.instagram.com/anjosbarbearia.sp/",
+        "priceRange": "$$"
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Anjos Barbearia">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>Anjos</strong>
+          <small>Barbearia SP</small>
+        </span>
+      </a>
+
+      <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" data-menu-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="main-nav" data-nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="header-action" href="https://www.instagram.com/anjosbarbearia.sp/" target="_blank" rel="noreferrer">
+        <i data-lucide="instagram"></i>
+        Instagram
+      </a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Anjos Barbearia">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1800&q=85"
+          alt="Barbeiro finalizando corte masculino em uma barbearia"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">São Paulo, SP</p>
+          <h1>Anjos Barbearia</h1>
+          <p class="hero-copy">
+            Corte, barba e acabamento com presença. Um atendimento direto, cuidadoso e feito para sair pronto.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#agenda">
+              <i data-lucide="calendar-check"></i>
+              Agendar horário
+            </a>
+            <a class="button ghost" href="#servicos">
+              <i data-lucide="scissors"></i>
+              Ver serviços
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-strip" aria-label="Destaques">
+        <div>
+          <span>01</span>
+          <strong>Degradê limpo</strong>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Barba alinhada</strong>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Acabamento na navalha</strong>
+        </div>
+        <div>
+          <span>04</span>
+          <strong>Agenda pelo Instagram</strong>
+        </div>
+      </section>
+
+      <section class="section section-intro" id="servicos">
+        <div class="section-heading">
+          <p class="eyebrow">Serviços</p>
+          <h2>Visual alinhado do corte ao acabamento.</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-service-card data-service="Corte masculino" data-price="Valor a confirmar" data-time="Horário pelo Instagram">
+            <i data-lucide="scissors"></i>
+            <h3>Corte masculino</h3>
+            <p>Degradê, social, tesoura ou máquina com finalização precisa.</p>
+            <span>Consultar agenda</span>
+          </article>
+          <article class="service-card" data-service-card data-service="Barba" data-price="Valor a confirmar" data-time="Horário pelo Instagram">
+            <i data-lucide="razor"></i>
+            <h3>Barba</h3>
+            <p>Desenho, alinhamento e toalha quente para um resultado confortável.</p>
+            <span>Consultar agenda</span>
+          </article>
+          <article class="service-card featured" data-service-card data-service="Corte e barba" data-price="Valor a confirmar" data-time="Horário pelo Instagram">
+            <i data-lucide="sparkles"></i>
+            <h3>Corte e barba</h3>
+            <p>Pacote completo para renovar cabelo, barba e acabamento.</p>
+            <span>Consultar agenda</span>
+          </article>
+          <article class="service-card" data-service-card data-service="Corte só máquina" data-price="Valor a confirmar" data-time="Horário pelo Instagram">
+            <i data-lucide="badge-check"></i>
+            <h3>Corte só máquina</h3>
+            <p>Prático, rápido e bem marcado para manter o visual em dia.</p>
+            <span>Consultar agenda</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section">
+        <div class="split-media">
+          <img
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1300&q=85"
+            alt="Cliente recebendo acabamento de cabelo na cadeira de barbeiro"
+          />
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow">Atendimento</p>
+          <h2>Uma barbearia de bairro com padrão de detalhe.</h2>
+          <p>
+            A experiência foi pensada para quem quer resolver o visual sem enrolação: horário combinado, conversa clara e acabamento caprichado.
+          </p>
+          <ul class="check-list">
+            <li><i data-lucide="check"></i> Consulta rápida antes do corte</li>
+            <li><i data-lucide="check"></i> Finalização alinhada ao seu estilo</li>
+            <li><i data-lucide="check"></i> Higiene e cuidado em cada etapa</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="galeria">
+        <div class="section-heading compact">
+          <p class="eyebrow">Galeria</p>
+          <h2>Cortes com presença, linhas limpas e barba no ponto.</h2>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85"
+              alt="Corte masculino com acabamento lateral"
+            />
+            <figcaption>Degradê</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+              alt="Barbeiro aparando barba de cliente"
+            />
+            <figcaption>Barba</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=900&q=85"
+              alt="Ferramentas de barbearia organizadas sobre bancada"
+            />
+            <figcaption>Acabamento</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="agenda-band" id="agenda">
+        <div class="agenda-copy">
+          <p class="eyebrow">Agenda</p>
+          <h2>Escolha o serviço e chame no Instagram.</h2>
+          <p>
+            Selecione uma opção para montar o pedido. O próximo passo abre o perfil oficial da barbearia.
+          </p>
+          <div class="hours">
+            <i data-lucide="clock-3"></i>
+            <span>Horários atualizados direto no perfil oficial</span>
+          </div>
+        </div>
+
+        <form class="booking-panel" aria-label="Escolher atendimento">
+          <label for="serviceSelect">Serviço</label>
+          <select id="serviceSelect" data-service-select>
+            <option value="Corte masculino" data-price="Valor a confirmar" data-time="Horário pelo Instagram">Corte masculino</option>
+            <option value="Barba" data-price="Valor a confirmar" data-time="Horário pelo Instagram">Barba</option>
+            <option value="Corte e barba" data-price="Valor a confirmar" data-time="Horário pelo Instagram">Corte e barba</option>
+            <option value="Corte só máquina" data-price="Valor a confirmar" data-time="Horário pelo Instagram">Corte só máquina</option>
+          </select>
+
+          <label for="periodSelect">Melhor período</label>
+          <select id="periodSelect" data-period-select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+
+          <div class="booking-summary">
+            <span data-summary-service>Corte masculino</span>
+            <strong data-summary-price>Valor a confirmar</strong>
+            <small data-summary-time>Horário pelo Instagram</small>
+          </div>
+
+          <a class="button primary full" href="https://www.instagram.com/anjosbarbearia.sp/" target="_blank" rel="noreferrer" data-booking-link>
+            <i data-lucide="instagram"></i>
+            Chamar no Instagram
+          </a>
+        </form>
+      </section>
+
+      <section class="contact-section" id="contato">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>@anjosbarbearia.sp</h2>
+          <p>Atendimento em São Paulo. Para confirmar endereço, valores atualizados e horários livres, fale direto pelo Instagram.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://www.instagram.com/anjosbarbearia.sp/" target="_blank" rel="noreferrer">
+            <i data-lucide="instagram"></i>
+            Abrir perfil
+          </a>
+          <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Anjos%20Barbearia%20S%C3%A3o%20Paulo%20SP" target="_blank" rel="noreferrer">
+            <i data-lucide="map-pin"></i>
+            Ver no mapa
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Anjos Barbearia SP</span>
+      <a href="#inicio">Voltar ao topo</a>
+    </footer>
+  </body>
+</html>
