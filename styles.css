@@ -147,8 +147,7 @@ select {
 .header-action svg,
 .icon-button svg,
 .service-card svg,
-.check-list svg,
-.hours svg {
+.check-list svg {
   width: 18px;
   height: 18px;
   flex: 0 0 auto;
@@ -233,7 +232,6 @@ select {
 .hero h1,
 .section h2,
 .split-copy h2,
-.agenda-copy h2,
 .contact-section h2 {
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
@@ -291,7 +289,6 @@ select {
 
 .section,
 .split-section,
-.agenda-band,
 .contact-section {
   padding: clamp(68px, 9vw, 118px) clamp(18px, 5vw, 72px);
 }
@@ -311,7 +308,6 @@ select {
 
 .section h2,
 .split-copy h2,
-.agenda-copy h2,
 .contact-section h2 {
   font-size: clamp(38px, 5vw, 72px);
 }
@@ -328,12 +324,10 @@ select {
   border-radius: 8px;
   padding: 28px;
   background: var(--white);
-  cursor: pointer;
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
 }
 
-.service-card:hover,
-.service-card.is-selected {
+.service-card:hover {
   transform: translateY(-4px);
   border-color: rgba(178, 138, 69, 0.52);
   box-shadow: var(--shadow);
@@ -468,84 +462,6 @@ select {
   backdrop-filter: blur(8px);
 }
 
-.agenda-band {
-  display: grid;
-  grid-template-columns: minmax(320px, 1fr) minmax(320px, 430px);
-  gap: clamp(28px, 7vw, 90px);
-  align-items: center;
-  background: var(--green);
-  color: var(--white);
-}
-
-.agenda-copy p:not(.eyebrow) {
-  max-width: 620px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-.hours {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: 620px;
-  margin-top: 26px;
-  color: rgba(255, 255, 255, 0.92);
-  font-weight: 800;
-}
-
-.booking-panel {
-  display: grid;
-  gap: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-  padding: 24px;
-  background: var(--paper-strong);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-}
-
-.booking-panel label {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.booking-panel select {
-  width: 100%;
-  min-height: 48px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0 12px;
-  background: var(--white);
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.booking-summary {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4px 16px;
-  margin: 8px 0;
-  padding: 18px;
-  border-radius: 8px;
-  background: rgba(178, 138, 69, 0.12);
-}
-
-.booking-summary span {
-  font-weight: 900;
-}
-
-.booking-summary strong {
-  color: var(--wine);
-}
-
-.booking-summary small {
-  color: var(--muted);
-  font-weight: 800;
-}
-
 .contact-section {
   display: grid;
   grid-template-columns: minmax(320px, 1fr) auto;
@@ -628,7 +544,6 @@ select {
 
   .section-heading,
   .split-section,
-  .agenda-band,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -687,14 +602,12 @@ select {
 
   .section,
   .split-section,
-  .agenda-band,
   .contact-section {
     padding: 58px 16px;
   }
 
   .section h2,
   .split-copy h2,
-  .agenda-copy h2,
   .contact-section h2 {
     font-size: clamp(34px, 12vw, 52px);
   }
@@ -712,10 +625,6 @@ select {
   .gallery-grid figure,
   .gallery-grid figure:first-child {
     min-height: 360px;
-  }
-
-  .booking-panel {
-    padding: 18px;
   }
 
   .site-footer {
